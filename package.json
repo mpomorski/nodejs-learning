@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-tutorial",
+  "version": "1.0.0",
+  "description": "A playground project for learning node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon src/using-modules/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://matpom@github.com/matpom/nodejs-learing.git"
+  },
+  "author": "Matt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matpom/nodejs-learing/issues"
+  },
+  "homepage": "https://github.com/matpom/nodejs-learing#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
