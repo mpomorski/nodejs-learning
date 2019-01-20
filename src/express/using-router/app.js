@@ -8,6 +8,8 @@ const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 
 app.use(bodyParser.urlencoded({ extended: true }));
+// everything in that directory will have readonly access
+app.use(express.static(path.join(__dirname, 'public')));
 
 // order still matters
 app.use('/admin', adminRoutes);
