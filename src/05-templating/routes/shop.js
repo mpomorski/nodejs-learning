@@ -8,7 +8,8 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
   console.log(adminData.products);
-  res.sendFile(path.join(rootDir, 'views', 'shop.html'));
+  // uses the registered templating engine, no need to add ext as well
+  res.render('shop');
 });
 
 module.exports = router;
