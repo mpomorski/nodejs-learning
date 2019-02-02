@@ -5,8 +5,18 @@ const expressHandlebars = require('express-handlebars');
 const app = express();
 
 // registers templating engine, name has to match the extension of template files
-app.engine('handlebars', expressHandlebars());
-app.set('view engine', 'handlebars');
+// this is a default dir for layouts
+app.engine(
+  // only for views - bug
+  'hbs',
+  expressHandlebars({
+    layoutsDir: 'views/layouts',
+    defaultLayout: 'main-layout',
+    // only for layouts - bug
+    extname: 'hbs'
+  })
+);
+app.set('view engine', 'hbs');
 // this is the default
 app.set('views', 'views');
 const adminRoutes = require('./routes/admin');

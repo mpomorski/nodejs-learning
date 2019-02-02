@@ -10,7 +10,18 @@ router.get('/', (req, res, next) => {
   console.log(adminData.products);
   const products = adminData.products;
   // uses the registered templating engine, no need to add ext as well
-  res.render('shop', { prods: products, pageTitle: 'Shop', path: '/' });
+  // in handlebars we can't run any logic, just simple properties
+  // keeps templates lean
+  res.render('shop', {
+    prods: products,
+    pageTitle: 'Shop',
+    path: '/',
+    hasProducts: products.length > 0,
+    activeShop: true,
+    productCSS: true
+    // understood by hbs, will not use default layout
+    // layout: false
+  });
 });
 
 module.exports = router;
