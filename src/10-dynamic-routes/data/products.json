@@ -1,0 +1,16 @@
+[
+    {
+        "id": "53969a66-30d0-4d23-93c3-5baa3d45ff46",
+        "title": "A Book",
+        "imageUrl": "https://www.publicdomainpictures.net/pictures/10000/velka/1-1210009435EGmE.jpg",
+        "description": "This is an awesome book!",
+        "price": "19"
+    },
+    {
+        "title": "Apple display stand",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61WAml4lXfL._SX425_.jpg",
+        "description": "",
+        "price": "999",
+        "id": "939f51b4-aab0-4e04-9426-4be624b2d167"
+    }
+]
